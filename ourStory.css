@@ -1,0 +1,318 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF4ed;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black */
+    /*backdrop-filter: blur(10px); /* Blur effect */
+    /* -webkit-backdrop-filter: blur(10px); /* For Safari */
+    width: 100%;
+    height: 75px;
+    margin-bottom: 40%;
+    position: fixed;
+    /* Keep navbar fixed on top */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* Make sure navbar is above the content */
+}
+
+.icon img {
+    width: 130px;
+    float: left;
+    height: 80px;
+}
+
+.menu {
+    width: 50%;
+    float: right;
+    height: 75px;
+
+}
+
+ul {
+    float: left;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+/* Modal styles */
+/* Modal Background */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    padding-top: 60px;
+    /* Place the modal 60px from the top */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    /* White background */
+    margin: 5% auto;
+    /* 5% from the top and centered */
+    padding: 20px;
+    /* Padding inside the modal */
+    border: 1px solid #888;
+    /* Grey border */
+    width: 80%;
+    /* Width of the modal */
+    max-width: 500px;
+    /* Max width */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    /* Light grey color */
+    float: right;
+    /* Align to the right */
+    font-size: 28px;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    /* Change color on hover */
+    text-decoration: none;
+    /* No underline */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Padding */
+    margin: 8px 0;
+    /* Margin */
+    border: 1px solid #ccc;
+    /* Light grey border */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Buttons */
+button {
+    background-color: #ef8805;
+    /* orange background */
+    color: white;
+    /* White text */
+    padding: 10px 15px;
+    /* Padding */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+button:hover {
+    background-color: #854d06;
+    /* Brown on hover */
+}
+
+/* Error and Success Messages */
+.message {
+    margin-top: 10px;
+    /* Margin above messages */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.error {
+    color: red;
+    /* Red for errors */
+}
+
+.success {
+    color: green;
+    /* Green for success */
+}
+
+#welcomeMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Brush Script MT;
+    font-size: 2.4em;
+    color: #DAA520;
+    /* Gold color for 'Discover' */
+}
+
+.journey {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/*our story */
+.story {
+    display: flex;
+    align-items: center;
+    background-color: #fff4ed;
+    color: #333;
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+
+}
+
+.story-content {
+    width: 100%;
+    text-align: center;
+}
+
+.story-content h2 {
+    font-size: 36px;
+    font-family: Georgia;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.story-content h2 span {
+    font-size: 36px;
+    color: #DAA520;
+    /* Gold color for 'Discover' */
+    font-family: Brush Script MT;
+}
+
+.story-content img {
+    width: 70%;
+    height: 60%;
+}
+
+/* Styles for the  reasons */
+.one {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ede7e1;
+
+}
+
+.one p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: Arila;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    /* Black color */
+    color: white;
+    /* White text */
+    text-align: center;
+    /*make the text in the middle */
+    padding: 20px 0;
+    font-family: Arial;
+    width: 100%;
+    margin-top: 0%;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    gap: 20px;
+    /* Add spacing between icons */
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    /* Icon background */
+    border-radius: 50%;
+    /* Make icons circular border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 20px;
+    /* Icon size */
+    height: 20px;
+}
+
+/* Navigation Links */
+.footer-nav {
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    color: orange;
+    /* Hover effect */
+}

@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black */
+    /*backdrop-filter: blur(10px); /* Blur effect */
+    /* -webkit-backdrop-filter: blur(10px); /* For Safari */
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    position: fixed;
+    /* Keep navbar fixed on top */
+    top: 0;
+    z-index: 100;
+    /* Make sure navbar is above the content */
+}
+
+.icon img {
+    width: 130px;
+    float: left;
+    height: 80px;
+}
+
+img {
+    width: 100px;
+    float: left;
+    height: 100px;
+}
+
+.menu {
+    width: 50%;
+    float: right;
+    height: 75px;
+
+}
+
+ul {
+    float: left;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    font-family: Arial;
+}
+
+/* Modal styles */
+/* Modal Background */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    padding-top: 60px;
+    /* Place the modal 60px from the top */
+}
+
+h2 {
+    font-family: arial;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    /* White background */
+    margin: 5% auto;
+    /* 5% from the top and centered */
+    padding: 20px;
+    /* Padding inside the modal */
+    border: 1px solid #888;
+    /* Grey border */
+    width: 80%;
+    /* Width of the modal */
+    max-width: 500px;
+    /* Max width */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    /* Light grey color */
+    float: right;
+    /* Align to the right */
+    font-size: 28px;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    /* Change color on hover */
+    text-decoration: none;
+    /* No underline */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Padding */
+    margin: 8px 0;
+    /* Margin */
+    border: 1px solid #ccc;
+    /* Light grey border */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Buttons */
+button {
+    background-color: #ef8805;
+    /* orange background */
+    color: white;
+    /* White text */
+    padding: 10px 15px;
+    /* Padding */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+button:hover {
+    background-color: #854d06;
+    /* Brown on hover */
+}
+
+/* Error and Success Messages */
+.message {
+    margin-top: 10px;
+    /* Margin above messages */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.error {
+    color: red;
+    /* Red for errors */
+}
+
+.success {
+    color: green;
+    /* Green for success */
+}
+
+#welcomeMessage {
+    text-align: center;
+    margin-top: 0px;
+    font-family: Brush Script MT;
+    font-size: 2.4em;
+    color: #DAA520;
+    /* Gold color for 'Discover' */
+}
+
+.reservation-container {
+    margin-top: 100px;
+    /* Adjust to match navbar height */
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Optional transparency */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.background img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* Keep background behind everything */
+}
+
+
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: arial, serif;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reservation-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input[type="date"],
+select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: Black;
+}
+
+.time-slots button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+
+    color: black;
+}
+
+.time-slots button:hover {
+    background-color: orange;
+    text-align: center;
+}
+
+.time-slots .selected {
+    background-color: orange;
+    border-color: #e53935;
+    color: black;
+    text-align: center;
+}
+
+.reserve-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.reserve-btn:hover {
+    background-color: #eaba6b;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    /* Black color */
+    color: white;
+    /* White text */
+    text-align: center;
+    /*make the text in the middle */
+    padding: 20px 0;
+    font-family: Arial;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    gap: 20px;
+    /* Add spacing between icons */
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    /* Icon background */
+    border-radius: 50%;
+    /* Make icons circular border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 20px;
+    /* Icon size */
+    height: 20px;
+}
+
+/* Navigation Links */
+.footer-nav {
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    color: orange;
+    /* Hover effect */
+}

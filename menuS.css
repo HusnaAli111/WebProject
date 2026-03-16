@@ -1,0 +1,448 @@
+:root {
+    --main-color: orange;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #fff4ed;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black */
+    /* backdrop-filter: blur(10px); /* Blur effect */
+    /* -webkit-backdrop-filter: blur(10px); /* For Safari */
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    position: fixed;
+    /* Keep navbar fixed on top */
+    top: 0;
+    z-index: 100;
+    /* Make sure navbar is above the content */
+}
+
+.icon img {
+    width: 130px;
+    height: 80px;
+    float: left;
+}
+
+.menu {
+    width: 50%;
+    float: right;
+    height: 75px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    padding-top: 60px;
+    /* Place the modal 60px from the top */
+}
+
+/* Login form Styles */
+.modal-content {
+    background-color: #fefefe;
+    /* White background */
+    margin: 5% auto;
+    /* 5% from the top and centered */
+    padding: 20px;
+    /* Padding inside the modal */
+    border: 1px solid #888;
+    /* Grey border */
+    width: 80%;
+    /* Width of the modal */
+    max-width: 500px;
+    /* Max width */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    /* Light grey color */
+    float: right;
+    /* Align to the right */
+    font-size: 28px;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    /* Change color on hover */
+    text-decoration: none;
+    /* No underline */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Padding */
+    margin: 8px 0;
+    /* Margin */
+    border: 1px solid #ccc;
+    /* Light grey border */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Buttons */
+button {
+    background-color: #ef8805;
+    /* Orange background */
+    color: white;
+    /* White text */
+    padding: 10px 15px;
+    /* Padding */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+button:hover {
+    background-color: #854d06;
+    /* Brown on hover */
+}
+
+/* Error and Success Messages */
+.message {
+    margin-top: 10px;
+    /* Margin above messages */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.error {
+    color: red;
+    /* Red for errors */
+}
+
+.success {
+    color: green;
+    /* Green for success */
+}
+
+#welcomeMessage {
+    text-align: center;
+    margin-top: 90px;
+    font-family: Brush Script MT;
+    font-size: 2.4em;
+    color: #DAA520;
+    /* Gold color for 'Discover' */
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 0.5%;
+    margin-left: 1.5%;
+    margin-bottom: 30px;
+}
+
+.header {
+    color: #3a2102;
+    background-color: white;
+    /* Solid background color */
+    opacity: 0.5;
+    /* 50% transparent */
+    text-align: center;
+}
+
+.hed {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+}
+
+.food {
+    position: relative;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: auto;
+}
+
+.food:hover {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.food img {
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.food h3 {
+    margin: 10px 0 5px;
+}
+
+.food p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.food span {
+    font-weight: bold;
+    color: #665222;
+}
+
+.footer-nav {
+    margin: 15px 0;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: hsl(37, 69%, 65%);
+}
+
+.cart {
+    max-height: 90vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    overflow-y: auto;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid var(--text-color);
+    outline-color: var(--text-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--text-color);
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#cart-icon {
+    font-size: 24px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    /* Black color */
+    color: white;
+    /* White text */
+    text-align: center;
+    /* Make the text in the middle */
+    padding: 20px 0;
+    font-family: Arial;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    gap: 20px;
+    /* Add spacing between icons */
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    /* Icon background */
+    border-radius: 50%;
+    /* Make icons circular border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 20px;
+    /* Icon size */
+    height: 20px;
+}
+
+/* Navigation Links */
+.footer-nav {
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    color: orange;
+    /* Hover effect */
+}

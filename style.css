@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black */
+    /*backdrop-filter: blur(10px); /* Blur effect */
+    /* -webkit-backdrop-filter: blur(10px); /* For Safari */
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    position: fixed;
+    /* Keep navbar fixed on top */
+    top: 0;
+    z-index: 100;
+    /* Make sure navbar is above the content */
+}
+
+.icon img {
+    width: 130px;
+    float: left;
+    height: 80px;
+}
+
+img {
+    width: 100px;
+    float: left;
+    height: 180px;
+}
+
+.menu {
+    width: 50%;
+    float: right;
+    height: 75px;
+
+}
+
+ul {
+    float: left;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+.background img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /*center */
+    color: white;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    font-family: Arial;
+    margin-bottom: 10px;
+
+}
+
+.welcome p {
+    font-size: 24px;
+    font-family: Arial;
+}
+
+.order {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.order:hover {
+    background-color: white;
+    color: black;
+}
+
+#welcomeMessage {
+    text-align: center;
+    margin-top: 0px;
+    font-family: Brush Script MT;
+    font-size: 2.4em;
+    color: #DAA520;
+    /* Gold color for 'Discover' */
+}
+
+/* Styles for the  Serve Section */
+.serve {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff4ed;
+}
+
+.serve h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: Arila;
+}
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.service {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+
+.service img {
+    width: 160px;
+    margin-left: 9.5%;
+    height: 140px;
+}
+
+.service img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.service h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.service p {
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*menu button*/
+.menu-sec {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff4ed;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #333;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/*about us */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #fff4ed;
+    color: #333;
+    font-family: Arial;
+}
+
+.about-content {
+    width: 45%;
+    float: left;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-content h2 span {
+    font-size: 36px;
+    color: #DAA520;
+    /* Gold color for 'Discover' */
+    font-family: Brush Script MT;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.about-content a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #DAA520;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #DAA520;
+}
+
+.about-content a:hover {
+    color: #333;
+}
+
+.about-images {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.about-images img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 2%;
+    /* do gap between two pic */
+}
+
+.table {
+    position: relative;
+    /* Contains the absolutely positioned content */
+    width: 100%;
+    height: 100%;
+    /* Adjust to match the aspect ratio of your image */
+    overflow: hidden;
+    /* Prevents content from spilling out */
+}
+
+.table img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image fully covers the section */
+    filter: brightness(0.7);
+    /* Adds contrast for better text visibility */
+}
+
+.table2 {
+    position: absolute;
+    top: 50%;
+    /* Align to the vertical center */
+    left: 50%;
+    /* Align to the horizontal center */
+    transform: translate(-50%, -50%);
+    /* Perfect centering */
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.table2 h1 {
+    font-size: 48px;
+    /* Adjust size for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* Remove default margin */
+    line-height: 1.2;
+    /* Improves spacing for multi-line text */
+}
+
+
+
+
+.table3 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.table3:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Modal styles */
+/* Modal Background */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    padding-top: 60px;
+    /* Place the modal 60px from the top */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    /* White background */
+    margin: 5% auto;
+    /* 5% from the top and centered */
+    padding: 20px;
+    /* Padding inside the modal */
+    border: 1px solid #888;
+    /* Grey border */
+    width: 80%;
+    /* Width of the modal */
+    max-width: 500px;
+    /* Max width */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    /* Light grey color */
+    float: right;
+    /* Align to the right */
+    font-size: 28px;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    /* Change color on hover */
+    text-decoration: none;
+    /* No underline */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Padding */
+    margin: 8px 0;
+    /* Margin */
+    border: 1px solid #ccc;
+    /* Light grey border */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Buttons */
+button {
+    background-color: #ef8805;
+    /* orange background */
+    color: white;
+    /* White text */
+    padding: 10px 15px;
+    /* Padding */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+button:hover {
+    background-color: #854d06;
+    /* Brown on hover */
+}
+
+/* Error and Success Messages */
+.message {
+    margin-top: 10px;
+    /* Margin above messages */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.error {
+    color: red;
+    /* Red for errors */
+}
+
+.success {
+    color: green;
+    /* Green for success */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    /* Black color */
+    color: white;
+    /* White text */
+    text-align: center;
+    /*make the text in the middle */
+    padding: 20px 0;
+    font-family: Arial;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    gap: 20px;
+    /* Add spacing between icons */
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    /* Icon background */
+    border-radius: 50%;
+    /* Make icons circular border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 20px;
+    /* Icon size */
+    height: 20px;
+}
+
+/* Navigation Links */
+.footer-nav {
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    color: orange;
+    /* Hover effect */
+}
+
+#loginBtn {
+    cursor: pointer;
+}
