@@ -1,0 +1,101 @@
+<html>
+<head>
+  <title>Our Story - Restaurant</title>
+  <link rel="stylesheet" href="CSS/ourStory.css">
+  <script src="Java/login.js" defer></script>
+</head>
+<body>
+<body>
+<div id="main">
+   <div class="navbar">
+      <div class="icon">
+           <a href="home.html">
+          <img src="images/icon4.png" alt="Home Icon">
+       </a>
+      </div>
+      <div class="menu">
+          <ul>
+              <li><a href="reservation.html">RESERVATION</a></li>
+              <li><a href="menu.html">ORDER</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" id="loginBtn">LOGIN</a></li>
+             
+          </ul>
+      </div>
+   </div>
+   
+   <!--head-->    
+   <div class="story">
+    <div class="story-content"> 
+	<p id="welcomeMessage"></p>
+        <h2><span>Enjoy</span> our story</h2>
+        <p class="journey">
+		<b>"Enjoy reading about our journey "</b>
+        </p><br>
+		<img src="images/our-story.jpg">
+    </div>
+	</div>
+	
+	<div class="one">
+       <p>Our restaurant started with a simple idea: bringing people together through good food. It began as a small family dream, where cooking was <br>
+	      always a way to share love and create memories. What started in a small kitchen slowly grew into the restaurant you see today..</p>
+		  
+		<p>We believe that food should be fresh, tasty, and made with care. Every dish on our menu is prepared using quality ingredients and inspired <br>
+		by flavors from different cultures. Our goal is not just to serve meals, but to create an enjoyable experience for everyone who walks through our doors.
+		</p>
+		
+		<p>From families having dinner together to friends meeting after a long day, our restaurant is a place where everyone feels welcome. We are <br>
+		  proud to serve our community and continue growing while staying true to our passion for great food and friendly service.
+		</p>
+		
+		
+	   </div>
+	   <!-- Sign In Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register your details</h2>
+        <form id="loginForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="mobile">Mobile No</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Login</button>
+            <div class="message error" id="errorMessage"></div>
+            <div class="message success" id="successMessage"></div>
+        </form>
+    </div>
+</div>
+	   
+<!-- footer-->
+    <footer>
+    <!-- Social Media Links -->
+    <div class="social-icons">
+      <a href="#"><img src="images\facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images\instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images\x2.png" alt="Twitter"></a>
+      <a href="#"><img src="images\tiktok.png" alt="tiktok"></a>
+      <a href="#"><img src="images\youtube.png" alt="YouTube"></a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-nav">
+       <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="ourStory.html">About Us</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="making-of.html">Making Of</a>
+     
+    </div>
+  </footer>
+</div>
+</body>
+</html>

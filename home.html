@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="Java/cart.js" defer></script>
+    <script src="Java/login.js" defer></script>
+    <script src="Java/main.js" defer></script>
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="main">
+        <div class="navbar">
+            <div class="icon">
+
+                <img src="images/icon4.png" alt="Home Icon">
+
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                    <li><a href="menu.html">ORDER</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a id="loginBtn">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Background Image  -->
+        <div class="background">
+            <img src="images/background.jpg" alt="Welcome Background">
+            <div class="welcome">
+                <p id="welcomeMessage"></p>
+                <h1>Welcome to Our Restaurant</h1>
+                <p>Experience the best Italian cuisine in town!</p>
+                <a href="gallery.html" class="order">View Gallery</a>
+            </div>
+        </div>
+        <!-- Serve Section -->
+        <div class="serve">
+            <h2>We Serve</h2>
+            <div class="services">
+                <div class="service">
+                    <a href="menu.html#Starters"><img src="images/Bruschetta.jpg" alt="Starters">
+                        <h3>Starters</h3>
+                        <p>Begin your culinary journey with our tasty starters.</p>
+                    </a>
+                </div>
+                <div class="service">
+                    <a href="menu.html#Main-courses"><img src="images/Risotto.jpg" alt="Main Course">
+                        <h3>Main Course</h3>
+                        <p>Savor every bite of our hearty, homemade mains.</p>
+                    </a>
+                </div>
+                <div class="service">
+                    <a href="menu.html#Dessert"><img src="images/Panna Cotta.jpg" alt="Desserts">
+                        <h3>Desserts</h3>
+                        <p>Treat yourself to a little sweetness with our desserts.</p>
+                    </a>
+                </div>
+                <div class="service">
+                    <a href="menu.html#Drinks"><img src="images/Lemon Juice.jpg" alt="Drinks">
+                        <h3>Drinks</h3>
+                        <p>Raise your glass and refresh with our crafted drinks.</p>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="menu-sec">
+                <a href="menu.html" class="menu-button">View Menu</a>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="about">
+            <div class="about-content">
+                <h2><span>Discover</span> Our Story</h2>
+                <p>Welcome to Restaurante di Famiglia, a cozy Italian spot in Bahrain where traditional family recipes
+                    come to life. Enjoy handmade pasta, wood-fired pizza, and classic desserts in a warm, inviting
+                    atmosphere that brings the flavors of Italy right to your table.</p>
+                <a href="our-story.html">Learn About Us</a>
+            </div>
+            <div class="about-images">
+                <img src="images/chef.jpg" alt="Image 1">
+                <img src="images/story.jpg" alt="Image 2">
+            </div>
+        </div>
+        <!-- Background Image for table reservation  -->
+        <div class="table">
+            <img src="images/table.jpg" alt="Reservation Background">
+            <div class="table2">
+                <h1>Great meals start with great plans</h1>
+                <a href="reservation.html" class="table3">Reserve Now!</a>
+            </div>
+        </div>
+
+        <!-- Sign In Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Register your details</h2>
+                <form id="loginForm">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="mobile">Mobile No</label>
+                    <input type="text" id="mobile" name="mobile" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Login</button>
+                    <div class="message error" id="errorMessage"></div>
+                    <div class="message success" id="successMessage"></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- footer-->
+        <footer>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/x2.png" alt="Twitter"></a>
+                <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/youtube.png" alt="YouTube"></a>
+            </div>
+
+            <div class="footer-nav">
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="our-story.html">About Us</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="making-of.html">Making Of</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

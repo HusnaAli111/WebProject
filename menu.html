@@ -1,0 +1,384 @@
+<html>
+
+<head>
+    <title>Order.Page</title>
+    <link rel="stylesheet" href="CSS/menuS.css">
+    <script src="Java/menu.js" defer></script>
+    <script src="Java/login.js" defer></script>
+    <!-- https://boxicons.com icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <a href="home.html">
+                <img src="images/icon4.png" alt="Home Icon">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="menu.html">ORDER</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a id="loginBtn">LOGIN</a></li>
+                <!-- Cart Icon -->
+                <li><a><i class='bx bx-cart' id="cart-icon"></i></a></li>
+            </ul>
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Cart Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0 BD</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </div>
+    <p id="welcomeMessage"></p>
+    <h1 class="hed">Our Menu</h1>
+    <h2 class="header">Experience the flavors of Italy with our handcrafted dishes,<br> made to delight your palate.
+    </h2>
+    <section id="Starters">
+        <h2><u>Starters</u></h2>
+    </section>
+    <!-- Using section to create a link for specific place at the page -->
+    <div class="menu-container">
+        <!-- Box 1 -->
+        <div class="food">
+            <img src="images/Fries.jpg" alt="Fries pic" class="product-img">
+            <h3 class="product-title">Fries</h3>
+            <p>Fries are crispy, golden-brown potatoes, typically served hot and salted.</p>
+            <span class="price">2.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 2 -->
+        <div class="food">
+            <img src="images/Garlic Bread.jpg" alt="Garlic Bread pic" class="product-img">
+            <h3 class="product-title">Garlic Bread</h3>
+            <p>Garlic bread is toasted bread spread with garlic butter, often topped with herbs.</p>
+            <span class="price">2.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 3 -->
+        <div class="food">
+            <img src="images/Polenta.jpg" alt="Polenta pic" class="product-img">
+            <h3 class="product-title">Polenta</h3>
+            <p>Polenta is a creamy dish made from cornmeal.</p>
+            <span class="price">1.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 4 -->
+        <div class="food">
+            <img src="images/Cheese Sticks.jpg" alt="Cheese Sticks pic" class="product-img">
+            <h3 class="product-title">Cheese Sticks</h3>
+            <p>Cheese sticks are breaded and fried cheese, served hot and gooey, often with marinara sauce.</p>
+            <span class="price">2.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 5 -->
+        <div class="food">
+            <img src="images/Bruschetta.jpg" alt="Bruschetta pic" class="product-img">
+            <h3 class="product-title">Bruschetta</h3>
+            <p>Bruschetta consists of toasted bread topped with a mixture of diced tomatoes, garlic, and basil.</p>
+            <span class="price">2.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+    <section id="Main-courses">
+        <h2><u>Main-courses</u></h2>
+    </section>
+    <div class="menu-container">
+        <!-- Additional menu items can go here -->
+        <div class="food">
+            <img src="images/margrita pizza.jpg" alt="Margarita pizza" class="product-img">
+            <h3 class="product-title">Margarita pizza</h3>
+            <p>Margherita pizza is a simple yet wonderful combination of fresh tomatoes, mozzarella cheese, basil, and
+                olive oil on a thin crust.</p>
+            <span class="price">8.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Paperoni pizza.jpg" alt="Paperoni pizza" class="product-img">
+            <h3 class="product-title">Paperoni pizza</h3>
+            <p>Pepperoni pizza is a traditional blend of hot pepperoni slices, melting mozzarella, and rich tomato sauce
+                served on a crispy crust.</p>
+            <span class="price">8.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Vegetable pizza.jpg" alt="Vegetable pizza" class="product-img">
+            <h3 class="product-title">Vegetable pizza</h3>
+            <p>Vegetable pizza is a tasty meal that combines fresh veggies, cheese, and savory tomato sauce.</p>
+            <span class="price">7.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Ranch pizza.jpg" alt="Ranch pizza" class="product-img">
+            <h3 class="product-title">Ranch pizza</h3>
+            <p>Ranch pizza is a delicious dish covered with ranch dressing, mozzarella, and a variety of meats and fries
+                for a gourmet twist.</p>
+            <span class="price">8.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Barbecue Pizza.jpg" alt="Barbecue Pizza pic" class="product-img">
+            <h3 class="product-title">Barbecue Pizza</h3>
+            <p>Barbecue pizza has a smoky barbecue sauce foundation, which is topped with cheese, grilled meats, and
+                veggies for a delicious and tangy flavor.</p>
+            <span class="price">9.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="food">
+            <img src="images/Mix Pizza.jpg" alt="Mix Pizza pic" class="product-img">
+            <h3 class="product-title">Mix pizza</h3>
+            <p>Mix pizza has a variety of toppings such as meats, veggies, and cheeses, resulting in a pleasantly
+                diversified flavor experience.</p>
+            <span class="price">9.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Pink pasta.jpg" alt="Pink pasta pic" class="product-img">
+            <h3 class="product-title">Pink pasta</h3>
+            <p>Pink pasta has a creamy tomato sauce that combines the richness of Alfredo with the tanginess of
+                marinara, resulting in a colorful and tasty meal.</p>
+            <span class="price">4.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/White Pasta.jpg" alt="White Pasta pic" class="product-img">
+            <h3 class="product-title">White Pasta</h3>
+            <p>White pasta is pasta served with a creamy Alfredo sauce, enhancing its texture and flavor without the
+                tomato acidity.</p>
+            <span class="price">4.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Vegetable Pasta.jpg" alt="Vegetable Pasta pic" class="product-img">
+            <h3 class="product-title">Vegetable Pasta</h3>
+            <p>Vegetable pasta is a healthy and colorful meal made with fresh vegetables, often sautéed or roasted,
+                tossed with pasta and a light sauce.</p>
+            <span class="price">4.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Spaghetti.jpg" alt="Spaghetti pic" class="product-img">
+            <h3 class="product-title">Spaghetti</h3>
+            <p>Spaghetti is a long, thin pasta often served with various sauces, such as marinara, Bolognese, or Aglio e
+                Olio, for a classic Italian meal.</p>
+            <span class="price">4.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="food">
+            <img src="images/Lasagna.jpg" alt="Lasagna pic" class="product-img">
+            <h3 class="product-title">Lasagna</h3>
+            <p>Lasagna is a delectable pasta dish consisting of pasta sheets, a meat or vegetable filling, marinara
+                sauce, and ample cheese, baked to perfection.</p>
+            <span class="price">7.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Risotto.jpg" alt="Risotto pic" class="product-img">
+            <h3 class="product-title">Risotto</h3>
+            <p>Risotto is a slow-cooked, creamy rice dish often topped with cheese, vegetables, or seafood for added
+                flavor.</p>
+            <span class="price">6.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+
+    <h2><u>Salads</u></h2>
+    <div class="menu-container">
+        <div class="food">
+            <img src="images/Caesar Salad.jpg" alt="Caesar Salad pic" class="product-img">
+            <h3 class="product-title">Caesar Salad</h3>
+            <p>Caesar salad is a dish made with romaine lettuce, croutons, and a creamy dressing, often topped with
+                grated Parmesan.</p>
+            <span class="price">4.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Greek Salad.jpg" alt="Greek Salad pic" class="product-img">
+            <h3 class="product-title">Greek Salad</h3>
+            <p>A Greek salad is a dish made from fresh tomatoes, cucumbers, olives, and feta cheese, seasoned with olive
+                oil and oregano.</p>
+            <span class="price">4.000 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Halloumi Salad.jpg" alt="Halloumi Salad pic" class="product-img">
+            <h3 class="product-title">Halloumi Salad</h3>
+            <p>The halloumi salad is a delectable dish that features grilled halloumi cheese, mixed greens, and a
+                variety of colorful vegetables.</p>
+            <span class="price">5.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Balsamic Strawberry Caprese.jpg" alt="Balsamic Strawberry Caprese pic" class="product-img">
+            <h3 class="product-title">Balsamic Strawberry Caprese</h3>
+            <p>Caprese salad, a classic Italian dish featuring fresh mozzarella cheese, ripe tomatoes, basil leaves,
+                olive oil, and balsamic vinegar, is a refreshing summer treat.</p>
+            <span class="price">6.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+
+    <section id="Dessert">
+        <h2><u>Dessert</u></h2>
+    </section>
+    <div class="menu-container">
+        <div class="food">
+            <img src="images/Tiramisu.jpg" alt="Tiramisu pic" class="product-img">
+            <h3 class="product-title">Tiramisu</h3>
+            <p>Tiramisu is a layered coffee-flavored dessert made with mascarpone cheese and ladyfingers.</p>
+            <span class="price">4.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Panna Cotta.jpg" alt="Panna Cotta pic" class="product-img">
+            <h3 class="product-title">Panna Cotta</h3>
+            <p>Panna cotta is a creamy, chilled dessert made from sweetened cream thickened with gelatin.</p>
+            <span class="price">3.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Gelato.jpg" alt="Gelato pic" class="product-img">
+            <h3 class="product-title">Gelato</h3>
+            <p>Gelato is a rich and smooth Italian ice cream, known for its intense flavors and lower fat content.</p>
+            <span class="price">2.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Biscotti.jpg" alt="Biscotti pic" class="product-img">
+            <h3 class="product-title">Biscotti</h3>
+            <p>Biscotti are crunchy, twice-baked cookies, often flavored with almonds or anise.</p>
+            <span class="price">3.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+
+    <section id="Drinks">
+        <h2><u>Drinks</u></h2>
+    </section>
+    <div class="menu-container">
+        <div class="food">
+            <img src="images/espresso.jpg" alt="espresso pic" class="product-img">
+            <h3 class="product-title">Espresso</h3>
+            <p>A rich and concentrated coffee brewed by forcing hot water through finely-ground coffee beans, known for
+                its bold flavor and creamy texture.</p>
+            <span class="price">1.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Lemon Juice.jpg" alt="Lemon Juice pic" class="product-img">
+            <h3 class="product-title">Lemon Juice</h3>
+            <p>Freshly squeezed juice from lemons, offering a bright, tangy flavor that adds a refreshing and zesty kick
+                to drinks and dishes.</p>
+            <span class="price">2.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Orange Juice.jpg" alt="Orange Juice pic" class="product-img">
+            <h3 class="product-title">Orange Juice</h3>
+            <p>Sweet and citrusy juice extracted from fresh oranges, providing a vibrant flavor and a boost of vitamin
+                C, perfect for adding sweetness and acidity.</p>
+            <span class="price">2.500 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="food">
+            <img src="images/Water.jpg" alt="Water pic" class="product-img">
+            <h3 class="product-title">Water</h3>
+            <p>Pure, bottled water from natural springs, known for its crisp taste and mineral balance.</p>
+            <span class="price">0.800 BD</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+
+    <!-- Link to JS -->
+    <script src="java/main.js"></script>
+
+    <!-- Sign In Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register your details</h2>
+            <form id="loginForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="mobile">Mobile No</label>
+                <input type="text" id="mobile" name="mobile" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Login</button>
+                <div class="message error" id="errorMessage"></div>
+                <div class="message success" id="successMessage"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/x2.png" alt="Twitter"></a>
+            <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/youtube.png" alt="YouTube"></a>
+        </div>
+
+        <div class="footer-nav">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="our-story.html">About Us</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="making-of.html">Making Of</a>
+        </div>
+    </footer>
+
+    <!-- Sign In Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register your details</h2>
+            <form id="loginForm">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="mobile">Mobile No</label>
+                <input type="text" id="mobile" name="mobile" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Login</button>
+                <div class="message error" id="errorMessage"></div>
+                <div class="message success" id="successMessage"></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
